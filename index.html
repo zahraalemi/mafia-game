@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="form-box">
+    <div class="mafia-box">
+      <h1>Mafia</h1>
+      <input type="checkbox" id="pedarkhandeh" name="mafia-group" /><label for="pedarkhandeh">Pedarkhandeh</label>
+      <input type="checkbox" id="matador" name="mafia-group" /><label for="matador">Matador</label>
+      <input type="checkbox" id="saul" name="mafia-group" /><label for="saul">Saul</label>
+      <div>Mafia sade:<input type="number" class="simple-mafia" value="0" /></div>
+    </div>
+    <div class="citizen-box">
+      <h1>Citizen</h1>
+      <input type="checkbox" id="karagah" name="citizen-group" /><label for="karagah">karagah</label>
+      <input type="checkbox" id="doctor" name="citizen-group" /><label for="doctor">doctor</label>
+      <input type="checkbox" id="snaiper" name="citizen-group" /><label for="snaiper">snaiper</label>
+      <div>Citizen sade:<input type="number" class="simple-citizen" value="0" /></div>
+    </div>
+    <input type="button" value="Next" class="next-btn" />
+  </div>
+  <div class="result-box hidden-box">
+    <h1>Result</h1>
+    <div class="description-player"></div>
+    <input type="button" value="Start" class="start-btn">
+  </div>
+<div class="popup-box hidden-box">
+  <div class="role-card"></div>
+  <input type="button" value="Done" class="done-btn">
+</div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
