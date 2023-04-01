@@ -1,0 +1,28 @@
+.role-icon{
+    font-size: 10rem;
+}
+.townspeople-icon{
+    @include fa-icon-solid($fa-var-user);
+}
+.detective-icon{
+    @include fa-icon-solid($fa-var-person-military-pointing);
+}
+.doctor-icon{
+    @include fa-icon-solid($fa-var-user-doctor);
+}
+.snaiper-icon{
+    @include fa-icon-solid($fa-var-person-rifle);
+}
+.godfather-icon{
+    @include fa-icon-solid($fa-var-user-secret);
+}
+.saul-icon{
+    @include fa-icon-solid($fa-var-user-gear);
+}
+.matador-icon{
+    @include fa-icon-solid($fa-var-user-ninja);
+}
+.mafia-icon{
+    @include fa-icon-solid($fa-var-user-tie);
+}
+

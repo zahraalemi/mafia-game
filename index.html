@@ -4,37 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/css/style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="form-box">
-    <div class="mafia-box">
-      <h1>Mafia</h1>
-      <input type="checkbox" id="pedarkhandeh" name="mafia-group" /><label for="pedarkhandeh">Pedarkhandeh</label>
-      <input type="checkbox" id="matador" name="mafia-group" /><label for="matador">Matador</label>
-      <input type="checkbox" id="saul" name="mafia-group" /><label for="saul">Saul</label>
-      <div>Mafia sade:<input type="number" class="simple-mafia" value="0" /></div>
+  <div class="main-container">
+    <div class="main-showcase">
+      <div class="mafia-box">
+        <h1>Mafia</h1>
+        <div class="form-box">
+          <div class="input-chk">
+            <div><input type="checkbox" id="godfather" name="mafia-group" /><label for="godfather">Godfather</label>
+            </div>
+            <div><input type="checkbox" id="matador" name="mafia-group" /><label for="matador">Matador</label></div>
+            <div><input type="checkbox" id="saul" name="mafia-group" /><label for="saul">Saul</label></div>
+          </div>
+          <div>Mafia sade:<input type="number" class="simple-mafia field-qty" value="0" /></div>
+        </div>
+      </div>
+      <div class="towns-box">
+        <h1>Towns</h1>
+        <div class="form-box">
+          <div class="input-chk">
+            <div>
+              <input type="checkbox" id="detective" name="towns-group" /><label for="detective">Detective</label>
+            </div>
+            <div>
+              <input type="checkbox" id="doctor" name="towns-group" /><label for="doctor">Doctor</label>
+            </div>
+            <div><input type="checkbox" id="snaiper" name="towns-group" /><label for="snaiper">Snaiper</label></div>
+          </div>
+          <div>Townspeople:<input type="number" class="towns-people field-qty" value="0" /></div>
+        </div>
+      </div>
+      <input type="button" value="Next" class="next-btn btn" />
     </div>
-    <div class="citizen-box">
-      <h1>Citizen</h1>
-      <input type="checkbox" id="karagah" name="citizen-group" /><label for="karagah">karagah</label>
-      <input type="checkbox" id="doctor" name="citizen-group" /><label for="doctor">doctor</label>
-      <input type="checkbox" id="snaiper" name="citizen-group" /><label for="snaiper">snaiper</label>
-      <div>Citizen sade:<input type="number" class="simple-citizen" value="0" /></div>
+    <div class="result-box hidden-box">
+      <div class="result-container">
+        <h1>Result</h1>
+        <div class="description-player"></div>
+        <div class="result-buttons">
+        <input type="button" value="Start" class="start-btn btn">
+        <input type="button" value="Restart" class="restart-btn btn">
+      </div>
+      </div>
+
     </div>
-    <input type="button" value="Next" class="next-btn" />
+    <div class="popup-box hidden-box">
+      <div class="container-card">
+        <div class="role-card"></div>
+        <input type="button" value="Done" class="done-btn btn">
+      </div>
+
+    </div>
   </div>
-  <div class="result-box hidden-box">
-    <h1>Result</h1>
-    <div class="description-player"></div>
-    <input type="button" value="Start" class="start-btn">
-  </div>
-<div class="popup-box hidden-box">
-  <div class="role-card"></div>
-  <input type="button" value="Done" class="done-btn">
-</div>
 
 
 

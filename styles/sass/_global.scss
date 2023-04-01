@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+
+    h1 {
+        font-size: 3rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .main-container {
+        height: 100vh;
+        @extend %flexbox;
+
+
+        .main-showcase {
+            @extend %flexbox;
+            @extend %border-details;
+            flex-direction: column;
+
+
+            >div {
+                padding: 1rem;
+            }
+
+            .form-box {
+                display: flex;
+
+                >div {
+                    padding: 10px;
+                }
+
+                .input-chk {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .field-qty {
+                    width: 30px;
+                }
+            }
+        }
+
+        .result-box {
+            @extend %border-details;
+            flex-direction: column;
+
+            .result-container {
+
+                >div {
+                    padding: 1rem 0;
+                }
+
+                .result-buttons {
+                    margin: 1rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+        }
+
+        .btn {
+            background-color: black;
+            border: 0;
+            border-radius: 0rem;
+            color: white;
+            padding: .5rem 1rem;
+        }
+
+        .hidden-box {
+            display: none !important;
+        }
+
+        .show-box {
+            @extend %flexbox;
+        }
+
+        .popup-box {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+
+
+
+
+            .container-card {
+                @extend %border-details;
+
+            }
+
+        }
+    }
+
+
+}
+
+%flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%border-details {
+    border: 2px solid #4e4e4e;
+    border-radius: .5rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 5px 5px 15px #b2b2b2;
+}
