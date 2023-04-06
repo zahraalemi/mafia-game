@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/css/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="src/styles/css/style.css">
+  <title>Mafia</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <div><input type="checkbox" id="matador" name="mafia-group" /><label for="matador">Matador</label></div>
             <div><input type="checkbox" id="saul" name="mafia-group" /><label for="saul">Saul</label></div>
           </div>
-          <div>Mafia sade:<input type="number" class="simple-mafia field-qty" value="0" /></div>
+          <div>Mafia sade:<input type="number" id="mafias" class="mafia-people field-qty" value="0" /></div>
         </div>
       </div>
       <div class="towns-box">
@@ -35,7 +35,7 @@
             </div>
             <div><input type="checkbox" id="snaiper" name="towns-group" /><label for="snaiper">Snaiper</label></div>
           </div>
-          <div>Townspeople:<input type="number" class="towns-people field-qty" value="0" /></div>
+          <div>Townspeople:<input type="number" id="towns" class="towns-people field-qty" value="0" /></div>
         </div>
       </div>
       <input type="button" value="Next" class="next-btn btn" />
@@ -46,6 +46,7 @@
         <div class="description-player"></div>
         <div class="result-buttons">
         <input type="button" value="Start" class="start-btn btn">
+        <input type="button" value="Show" class="showDetails-btn btn hidden-box">
         <input type="button" value="Restart" class="restart-btn btn">
       </div>
       </div>
@@ -54,7 +55,9 @@
     <div class="popup-box hidden-box">
       <div class="container-card">
         <div class="role-card"></div>
+        <input type="text" class="player-name" placeholder="Type player name">
         <input type="button" value="Done" class="done-btn btn">
+
       </div>
 
     </div>
@@ -62,7 +65,7 @@
 
 
 
-  <script src="app.js"></script>
+  <script type="module" src="src/js/app.js"></script>
 </body>
 
 </html>

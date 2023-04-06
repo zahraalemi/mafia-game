@@ -109,6 +109,20 @@ body .main-container .popup-box {
   height: 100%;
   background-color: white;
 }
+body .main-container .popup-box .container-card {
+  display: flex;
+  flex-direction: column;
+}
+body .main-container .popup-box .container-card .role-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+body .main-container .popup-box .container-card .done-btn {
+  margin: 10px;
+}
+
 body .main-container, body .main-container .main-showcase, body .main-container .show-box {
   display: flex;
   justify-content: center;
@@ -144,7 +158,7 @@ body .main-container .main-showcase, body .main-container .result-box, body .mai
 .snaiper-icon,
 .doctor-icon,
 .detective-icon,
-.townspeople-icon,
+.town-icon,
 .far,
 .fa-regular,
 .fab,
@@ -168,7 +182,7 @@ body .main-container .main-showcase, body .main-container .result-box, body .mai
 .snaiper-icon,
 .doctor-icon,
 .detective-icon,
-.townspeople-icon,
+.town-icon,
 .far,
 .fa-regular {
   font-family: "Font Awesome 6 Free";
@@ -179,7 +193,7 @@ body .main-container .main-showcase, body .main-container .result-box, body .mai
   font-family: "Font Awesome 6 Brands";
 }
 
-.mafia-icon, .matador-icon, .saul-icon, .godfather-icon, .snaiper-icon, .doctor-icon, .detective-icon, .townspeople-icon {
+.mafia-icon, .matador-icon, .saul-icon, .godfather-icon, .snaiper-icon, .doctor-icon, .detective-icon, .town-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -8403,7 +8417,7 @@ readers do not read off random characters that represent icons */
 .snaiper-icon,
 .doctor-icon,
 .detective-icon,
-.townspeople-icon {
+.town-icon {
   font-weight: 900;
 }
 
@@ -10459,7 +10473,7 @@ readers do not read off random characters that represent icons */
   font-size: 10rem;
 }
 
-.townspeople-icon::before {
+.town-icon::before {
   content: "\f007";
 }
 

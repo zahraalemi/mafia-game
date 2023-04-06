@@ -89,7 +89,18 @@ body {
 
             .container-card {
                 @extend %border-details;
+                display: flex;
+                flex-direction: column;
 
+                .role-card {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                }
+                .done-btn{
+                    margin: 10px;
+                }
             }
 
         }
